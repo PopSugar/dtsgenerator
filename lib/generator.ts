@@ -68,7 +68,7 @@ class Generator {
   private _id = "";
 
   constructor(private schema: model.IJsonSchema) {
-    this._id = schema.id || Date.now() + Math.random().toString();
+    this._id = schema.id || schema.name || Date.now() + Math.random().toString();
     
     if (this._id[0] !== "/") {
       this._id = "/" + this._id;

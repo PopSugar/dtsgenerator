@@ -8,6 +8,7 @@ export interface IJsonSchema {
   title?: string;
   description?: string;
   default?: any;
+  name?: string;
   format?: string;
   multipleOf?: number;
   maximum?: number;
