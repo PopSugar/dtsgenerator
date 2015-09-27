@@ -7,18 +7,6 @@ import dtsgenerator = require("../lib/index");
 console.error = function() {}
 
 describe("error schema test", () => {
-
-  it("no id schema", () => {
-    var schema: dtsgenerator.model.IJsonSchema = {
-      type: 'object',
-    };
-    try {
-      dtsgenerator([schema]);
-      assert.fail();
-    } catch (e) {
-      assert.equal("id is not found.", e.message);
-    }
-  });
   it("no type schema", () => {
     var schema: any = {
       id: '/test/no_type'
