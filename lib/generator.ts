@@ -68,11 +68,8 @@ class Generator {
   private _id = "";
 
   constructor(private schema: model.IJsonSchema) {
-    if (!schema.id) {
-      console.error(schema);
-      throw new Error("id is not found.");
-    }
-    this._id = schema.id;
+    this._id = schema.id || Date.now() + Math.random().toString();
+    
     if (this._id[0] !== "/") {
       this._id = "/" + this._id;
     }
