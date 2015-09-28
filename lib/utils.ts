@@ -13,6 +13,8 @@ export function toTSType(type: string, debugSource?: any): string {
 		case "object":
 		case "array":
 			return null;
+    case "date":
+      return "Date";
 		default :
 			if (debugSource) {
 				console.error(debugSource);
