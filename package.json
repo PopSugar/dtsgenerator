@@ -1,5 +1,5 @@
 {
-  "name": "@popsugar/dtsgenerator",
+  "name": "@ssjs/dtsgenerator",
   "version": "0.1.4",
   "description": "TypeScript d.ts file generator for JSON Schema file",
   "main": "index.js",
